@@ -1,5 +1,7 @@
 # RailsApiPaginate
 
+[![Gem Version](https://badge.fury.io/rb/rails_api_paginate.svg)](https://badge.fury.io/rb/rails_api_paginate)
+
 Add pagination support to rails API-Only applications for ActiveRecord relations.
 
 ## Installation
