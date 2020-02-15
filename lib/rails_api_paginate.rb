@@ -18,9 +18,7 @@ module RailsApiPaginate
     total_pages = (total_items.to_f / per_page).ceil
 
     next_page = current_page + 1 if current_page < total_pages
-
-    prev_page = current_page - 1 if current_page > 1
-    prev_page = total_pages - 1 if current_page > total_pages && total_pages > 0
+    prev_page = current_page - 1 if current_page > 1 && current_page < total_pages
 
     records = collection.limit(per_page).offset(per_page * (current_page - 1))
 
